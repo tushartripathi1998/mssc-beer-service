@@ -22,11 +22,11 @@
 |Style of Beer
 
 |`+upc+`
-|`+Number+`
+|`+String+`
 |Upc of Beer
 
 |`+price+`
-|`+Number+`
+|`+String+`
 |Price of Beer
 
 |`+quantityOnHand+`

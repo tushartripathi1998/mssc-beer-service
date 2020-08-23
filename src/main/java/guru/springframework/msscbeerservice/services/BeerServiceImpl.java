@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @RequiredArgsConstructor
-@Service
+@Service("beerService")
 public class BeerServiceImpl implements BeerService {
 
     private final BeerRepository beerRepository;
@@ -35,7 +35,7 @@ public class BeerServiceImpl implements BeerService {
     public BeerDto updateBeer(UUID beerId, BeerDto beerDto) {
         Beer beer = beerRepository.findById(beerId).orElseThrow(NotFoundException::new);
         beer.setBeerName(beerDto.getBeerName());
-        beer.setBeerStyle(beerDto.getBeerStyleEnum());
+        beer.setBeerStyle(beerDto.getBeerStyleEnum().name());
         beer.setPrice(beerDto.getPrice());
         beer.setUpc(beerDto.getUpc());
 

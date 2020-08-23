@@ -1,4 +1,4 @@
 [source,options="nowrap"]
 ----
-{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"My Beer","beerStyleEnum":"ALE","upc":122344444444,"price":2.99,"quantityOnHand":null}
+
 ----

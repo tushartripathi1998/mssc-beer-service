@@ -1,6 +1,5 @@
 [source,bash]
 ----
-$ curl 'http://localhost:8080/api/v1/beer/' -i -X POST \
-    -H 'Content-Type: application/json' \
-    -d '{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"My Beer","beerStyleEnum":"ALE","upc":122344444444,"price":2.99,"quantityOnHand":null}'
+$ curl 'http://localhost:8080/api/v1/beer/7df7fbab-2ada-4001-b424-534a66ac6679?isCold=yes' -i -X GET \
+    -H 'Accept: application/json'
 ----
