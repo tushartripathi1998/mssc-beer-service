@@ -10,6 +10,9 @@ import org.springframework.data.domain.PageRequest;
 import java.util.List;
 
 public class BeerPagedList extends PageImpl<BeerDto> {
+
+    static final long serialVersionUID = 3680067054899048829L;
+
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public BeerPagedList(@JsonProperty("content") List<BeerDto> content,
                          @JsonProperty("number") int number,
